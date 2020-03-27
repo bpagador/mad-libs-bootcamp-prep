@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- input for every word we're going to replace-->
     <section id="input-container">
-        this is the input container 
-        <label>
-            something
-            <input id="river-name-input">
-        </label>
-        <button id="button">Mad Lib me!</button>
-    </section>
-    <!-- button that submits out input, hides the inputs and makes the text visible -->
 
-    <!-- text of our mad lib (hidden at first, but later visible) -->
+        <ul>
+            <label> A food:
+                <input id="a-food-input">
+            </label>
+        </ul>
+        <button id="button">Mad Lib me!</button>
+
+    </section>
+
+    <section class="madlib-container" id="madlib-container">
+        <div>
+            I have eaten the <span id="a-food-span"></span>
+        </div>
+
+    </section>
+
+
 </body>
 <script src="app.js"></script>
 </html>
