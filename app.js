@@ -3,23 +3,49 @@
 // go get html elements by their ids
 
 // we'll need all the inputs
-const aFoodInput = document.getElementById('a-food-input');
-// we'll need spans to put the words into the mad lib
-const aFoodSpan = document.getElementById('a-food-span');
-// we'll need the container that holds the madlib
 const madlibContainer = document.getElementById('madlib-container');
-// we'll need the container that holds all the inputs 
 const inputContainer = document.getElementById('input-container');
-// we'll need the button so we can add the event listener 
 const myButton = document.getElementById('button');
 
+const noun1Input = document.getElementById('noun1-input');
+const noun1Span = document.getElementById('noun1-span');
+
+const nounPluralInput = document.getElementById('noun-plural-input');
+const nounPluralSpan = document.getElementById('noun-plural-span');
+
+const adjective1Input = document.getElementById('adjective1-input');
+const adjective1Span = document.getElementById('adjective1-span');
+
+const adjective2Input = document.getElementById('adjective2-input');
+const adjective2Span = document.getElementById('adjective2-span');
+
+const aFoodInput = document.getElementById('a-food-input');
+const aFoodSpan = document.getElementById('a-food-span');
+
+const aMoodInput = document.getElementById('a-mood-input');
+const aMoodSpan = document.getElementById('a-mood-span');
 // add event listeners
 function putAnswersIn() { 
     
-// get the value of the inputs
     const aFoodValue = aFoodInput.value;
-// use the input values to SET the value of our spans
     aFoodSpan.textContent = aFoodValue;
+
+    const aMoodValue = aMoodInput.value;
+    aMoodSpan.textContent = aMoodValue;
+
+    const noun1Value = noun1Input.value;
+    noun1Span.textContent = noun1Value;
+
+    const nounPluralValue = nounPluralInput.value;
+    nounPluralSpan.textContent = nounPluralValue;
+
+    const adjective1Value = adjective1Input.value;
+    adjective1Span.textContent = adjective1Value;
+
+    const adjective2Value = adjective2Input.value;
+    adjective2Span.textContent = adjective2Value;
+
+
 // hide the input container
     inputContainer.style.visibility = 'hidden';
 // reveal the mad lib container 
